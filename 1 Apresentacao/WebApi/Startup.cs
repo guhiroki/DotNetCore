@@ -19,7 +19,7 @@ namespace WebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            InjecaoDeDempendencia.Registrar(services);
+            InjecaoDeDependencia.Registrar(services);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

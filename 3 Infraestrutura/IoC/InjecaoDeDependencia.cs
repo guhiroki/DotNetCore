@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infraestrutura.IoC
 {
-    public static class InjecaoDeDempendencia
+    public static class InjecaoDeDependencia
     {
         public static void Registrar(IServiceCollection servico) 
         {
