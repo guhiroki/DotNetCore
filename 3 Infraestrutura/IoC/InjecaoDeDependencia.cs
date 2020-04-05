@@ -13,7 +13,7 @@ namespace Infraestrutura.IoC
         public static void Registrar(IServiceCollection servico) 
         {
             servico.AddDbContext<MovimentosManuaisContext>(
-                options => options.UseSqlServer("Persist Security Info=False;User ID=SA;Password=Naka_7807;Initial Catalog=TestItau;Server=localhost"));
+                options => options.UseSqlServer("Persist Security Info=False;User ID=SA;Password=Mssql@12345;Initial Catalog=TestItau;Server=localhost"));
             servico.AddScoped<IProdutoNegocio, ProdutoNegocio>();
             servico.AddScoped<IProdutoCosifNegocio, ProdutoCosifNegocio>();
             servico.AddScoped<IEntidadeManualNegocio, EntidadeManualNegocio>();
