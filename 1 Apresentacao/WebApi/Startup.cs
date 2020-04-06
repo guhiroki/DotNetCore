@@ -33,7 +33,7 @@ namespace WebApi
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseCors(option => option.AllowAnyOrigin());
 
             app.UseEndpoints(endpoints =>
             {
