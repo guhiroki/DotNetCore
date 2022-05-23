@@ -25,8 +25,7 @@ namespace Apresentacao.WebApi.Controller
         [HttpPost]
         public ActionResult<bool> PostEntidadeManual(EntidadeManualViewModel entidadeManual)
         {
-            var sucesso = _entidadeManualNegocio.Add(entidadeManual);
-            return sucesso;
+            return _entidadeManualNegocio.Add(entidadeManual);
         }
     }
 }
